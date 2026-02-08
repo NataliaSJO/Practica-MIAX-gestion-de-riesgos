@@ -1,0 +1,16 @@
+Para calcular el HMM se tiene en cuanta los siguientes datos:
+** Retornos diarios de SP&500
+** Ratio de Amihud: como feature de liquidez
+** VIXCLS: Mide la volatilidad implícita esperada para los próximos 30 días, con opciones del S&P500
+** DSG10: Capturan shocks en expectativas de largo plazo, com oInflación futura, crecimiento esperado y politica monetaria futura. 
+** DSG2: Capturan shocks en el corto plazo, ligados a decisiones inmediatas de la FED y expectativas de subidas/bajadas de tipos oficicales.
+   Cambios en la pendiente (DGS10 – DGS2), Capturan shocks de la forma de la curva, como:
+        Curva que se aplana → preocupación económica
+        Curva que se empina → expectativas de recuperación económica
+        Inversiones bruscas → señales de riesgo o recesión
+** BAMLH0A0HYM2: nivel y cambio del spread de high yield (proxy de tensión crediticia).
+** CFNAIMA3: proxy de PMI, no esta disponible desde 2003. Indice de 85 indicadores económocos de EEUU. Su objetivo es medir si la economía está por encima de la tendencia histórica o por debajo. 
+** CPI es una medida mensual, indica los indice de precios de consumo, la pérdida o ganancia de poder adquisitivo de los hogares   
+** unrate: mide la tasa de desempleo. 
+
+Me gustaría calcular alún parametro de sentimiento, como Put/Call Raiio o como AAII, PERO NO SOY CAPAZ DE ENCONTRAR DATOS.
