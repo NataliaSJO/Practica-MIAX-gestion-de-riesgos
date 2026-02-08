@@ -1,3 +1,7 @@
+-------------------------------------------------------------------
+Fase 1: Detectando el "Pulso" del Mercado (Hidden Markov Models)
+----------------------------------------------------------------------
+
 Para calcular el HMM se tiene en cuanta los siguientes datos:
 ** Retornos diarios de SP&500
 ** Ratio de Amihud: como feature de liquidez
@@ -14,3 +18,18 @@ Para calcular el HMM se tiene en cuanta los siguientes datos:
 ** unrate: mide la tasa de desempleo. 
 
 Me gustaría calcular alún parametro de sentimiento, como Put/Call Raiio o como AAII, PERO NO SOY CAPAZ DE ENCONTRAR DATOS.
+
+He calculado pintado la gráfica usando el modelo Gaussian HMM, me queda parecida a la que enseño en clase, pero hay franjas muy estrechas, quizas haya que poner alguna condicion extra.
+
+-----------------------------------------------------------------------------
+Fase 2: Anatomía del Riesgo (Análisis Marginal)
+--------------------------------------------------------------------------
+Para cada activo y para cada régimen calculado en HMM hay que calculas:
+        medida
+        volatilidad
+        skewness
+        kurtosis
+
+Con esto te permite ver como cambia el comportamiento de cada activo en crisis, si se vuelven más volatil, si desarrolla colas pesadas, si cambia su asimetria, si actua como refugio o se hunde.   
+
+Lo primero que hago es crear un df con los retornos diarios de la cartera. He calculado las metricas por cada activo y periodo de calma y crisis (NO estoy segura de si es lo que pide)
